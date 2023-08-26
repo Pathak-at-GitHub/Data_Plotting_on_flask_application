@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Display</title>
+</head>
+<body>
+    <h2>Data Points</h2>
+<!--    <table>-->
+<!--        <thead>-->
+<!--            <tr>-->
+<!--                <th>Column 1</th>-->
+<!--                <th>Column 2</th>-->
+<!--                &lt;!&ndash; Add more columns here if your CSV has more columns &ndash;&gt;-->
+<!--            </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--            {% for row in data_points %}-->
+<!--            <tr>-->
+<!--                <td>{{ row[0] }}</td>-->
+<!--                <td>{{ row[1] }}</td>-->
+<!--                &lt;!&ndash; Add more columns here if your CSV has more columns &ndash;&gt;-->
+<!--            </tr>-->
+<!--            {% endfor %}-->
+<!--        </tbody>-->
+<!--    </table>-->
+<img src="data:image/png;base64,{{ plot_data }}" alt="Pair Plot">
+</body>
+</html>

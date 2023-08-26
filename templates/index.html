@@ -1,0 +1,38 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>This is a trial</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>-->
+
+<!--  Upload files here-->
+<!--</h1>-->
+
+<!--<form action="/upload" method="POST" enctype="multipart/form-data">-->
+<!--        <input type="file" name="csv_file" accept=".csv">-->
+<!--        <input type="submit" value="Upload">-->
+<!--    </form>-->
+
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Plotter</title>
+</head>
+<body>
+    <h1>CSV Plotter</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv">
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if plot_data %}
+    <img src="data:image/png;base64,{{ plot_data }}" alt="Plot">
+    {% endif %}
+</body>
+</html>
